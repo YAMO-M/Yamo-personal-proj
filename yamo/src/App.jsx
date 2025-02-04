@@ -1,20 +1,24 @@
 import "./index.css";
 import Navbar from "./Nav";
 import MyBackViewImg from "./assets/MyBackViewImg.png";
-import CustomWidget from "./ChatBot";
+import ChatBot from "./ChatBot";
 import SongPlayer from "./SongPlayer";
+
+
 export default function App() {
   return (
     <>
-      <div id="bgImg" className=" bg-fixed h-screen bg-cover">
+      <div id="bgImg" className=" bg-fixed h-screen bg-cover sm:bg-cover">
         <div id="WholePanel">
           <Navbar />
           <img
             src={MyBackViewImg}
-            className=" w-80 -mt-30  -z-1 flex ml-740 "
+            className=" w-80 -mt-30 -z-1 flex justify-self-end mr-10 "
             alt="myphoto"
           />
-          <div className=" ml-220 mt-200 w-150 ">
+          <SongPlayer/>
+          
+          <div className=" ml-220 mt-180 w-150 sticky   ">
             <p className="text-2xl flex w-150">
               'Yamo' igama lami. I'm mostly Popular on{" "}
               <a href="https://www.facebook.com">
@@ -31,14 +35,13 @@ export default function App() {
               </a>
             </p>
             <p className="text-2xl w-150 flex ">
-              (ngiyadlala) and many other things. okwamanje ngenza iziqu e-ukzn.
-              usungaqagela ke ukuthi ezani.
+              (ngiyadlala) and many other platforms.This is a playground web for experiments
             </p>
           </div>
-          <CustomWidget />
+
+          <ChatBot />
         </div>
       </div>
-      <SongPlayer />
     </>
   );
 }

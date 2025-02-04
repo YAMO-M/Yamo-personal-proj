@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
-
-const CustomWidget = () => {
+export  default function ChatBot(){
   useEffect(() => {
     // Create a script element
     const script = document.createElement('script');
@@ -20,4 +19,4 @@ const CustomWidget = () => {
   return null; // This component does not need to render anything
 };
 
-export default CustomWidget;
+
