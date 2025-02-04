@@ -1,6 +1,6 @@
 {
-  "homepage": "http://YAMO-M.github.io/Yamo-personal-proj",
   "name": "yamo",
+  "homepage": "https://YAMO-M.github.io/Yamo-personal-proj/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -9,8 +9,8 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "predeployed": "npm run build",
-    "deploy": "gh-pages -d build"
+    "predeploy":"npm run build",
+    "deploy" :"gh-pages -d dist"
   },
   "dependencies": {
     "react": "^18.3.1",
