@@ -1,1 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Rocker&display=swap');
 @import "tailwindcss";
+
+*{
+  font-family: monospace,serif;
+}
+
+#bgImg{
+    
+    background-image: url("assets/image.png"
+    );
+    background-position: center;
+    color: #FFFFF0;
+    font-size: 30px;
+    background-repeat: no-repeat;
+    z-index: -1;
+    
+    
+    
+}
+
+/*#GlobeImg{
+   background-image: url("assets/GlobeImg.png");
+   background-repeat: no-repeat;
+   height: 530px;
+   width: 100px;
+}*/
